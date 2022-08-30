@@ -1,0 +1,137 @@
+:root {
+  --bs-link-color: inherit;
+  --bs-link-hover-color: inherit;
+}
+
+html, body {
+  height: 100%;
+  font-family: Gotham, var(--bs-font-sans-serif);
+}
+
+header {
+  backdrop-filter: none;
+}
+
+@media (min-width: 992px) {
+  header {
+    backdrop-filter: blur(4px);
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    margin-left: 1rem;
+  }
+}
+
+.nav-link {
+  font-weight: bold;
+  transition-property: color border-bottom;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  border-bottom: solid 3px #00000000;
+}
+
+a:hover, .nav-link:hover, .nav-link.active {
+  color: #f42613 !important;
+}
+
+.nav-link.active {
+  border-bottom: solid 3px #f42613ff;
+}
+
+.navbar-toggler {
+  border: #f42613ff solid 2px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("https://icons.getbootstrap.com/assets/icons/chevron-down.svg");
+  opacity: 75%;
+}
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 960px;
+  }
+}
+
+.container-width {
+  max-width: 50rem;
+}
+
+@media (min-width: 1200px) {
+  .container-width-sm {
+    max-width: 60rem;
+  }
+}
+
+.py-section {
+  padding: 5rem 0;
+}
+
+#home {
+  box-shadow: inset 0 100px 500px 0 white;
+  background-image: url("https://cdn.discordapp.com/attachments/709644099128524812/997828993191510046/vecteezy_abstract-white-background-with-halftone-texture_6469232.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#about {
+  min-height: 100vh;
+  background-image: url("https://cdn.discordapp.com/attachments/709644099128524812/997820437583122473/IMG_6509.jpg");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#about > div {
+  z-index: 200;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.bg-semi-transparent {
+  background-color: #0000003f;
+}
+
+#members img {
+  height: 250px;
+  object-fit: cover;
+}
+
+#goals img {
+  top: 5rem;
+}
+
+.text-info {
+  color: rgb(288, 35, 19) !important;
+}
+
+#goals > div {
+  padding-top: 7rem;
+  border-radius: 2rem;
+  background: conic-gradient(from -90deg at 50% -25%, rgb(288, 35, 19), rgb(209, 30, 30));
+  color: white;
+}
+
+@media (max-width: 576px) {
+  #about > div p {
+    font-size: 1rem;
+  }
+}
+
+footer {
+  background-color: #ebecf0;
+}
+
+footer a {
+  text-decoration: none;
+}
